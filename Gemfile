@@ -26,6 +26,7 @@ group :development do
   gem 'pry-plus'
 end
 group :development, :test do
+  gem 'capybara'
   gem 'awesome_print'
   gem 'factory_girl_rails'
   gem 'rspec-rails'

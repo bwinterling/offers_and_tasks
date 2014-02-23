@@ -6,6 +6,6 @@ FactoryGirl.define do
     description "MyText"
     terms "MyText"
     image_url "MyString"
-    expiration "2014-02-06 11:08:57"
+    expiration "2014-02-28 11:08:57"
   end
 end
