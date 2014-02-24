@@ -1,13 +1,11 @@
 -# navigation styled for Bootstrap 3.0
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        = render 'layouts/navigation_links'
+%nav.navbar
+  %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+    %span.icon-bar
+    %span.icon-bar
+    %span.icon-bar
+  %a.brand.main-nav-link{href: "/"}
+    %img{alt: "But_nav-logo_static", src: "//d3bopuxbkjftcp.cloudfront.net/assets/new/but_nav-logo_static-7aba0527bb1f554303b6bfe1ac106c89.png"}/
+  .collapse.navbar-collapse
+    %ul.nav.navbar-nav
+      = render 'layouts/navigation_links'

@@ -5,6 +5,7 @@
     %title= content_for?(:title) ? yield(:title) : 'Myapp'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Myapp'}"}
     = stylesheet_link_tag "application", media: "all"
+    %link{href: "//d3bopuxbkjftcp.cloudfront.net/assets/common-dae15cf70cde9a089f86b21c14d33de0.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body

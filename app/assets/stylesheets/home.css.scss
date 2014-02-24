@@ -1,6 +1,10 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  padding: 5px 60px;
+}
+
 .offer-list {
   overflow: hidden;
   list-style: none;
@@ -8,13 +12,13 @@
 
 #offers {
   margin-top: -50px;
+  background: image-url('maple.jpg');
 }
 
 .offer {
   float: left;
-  margin: 40px;
-  height: 400px;
-  width: 400px;
+  height: 465px;
+  margin: 40px 0;
 }
 
 .offer-image {
@@ -23,16 +27,24 @@
 
 .offer-desc {
   text-align: center;
+  font-size: 18px;
+  padding: 20px 20px 0;
 }
 
 .task-list {
   overflow: hidden;
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .task {
+  display: inline-block;
   margin: 5px;
-  float: left;
   background: image-url('img_how-token-sprite.png');
   height: 100px;
   width: 100px;
