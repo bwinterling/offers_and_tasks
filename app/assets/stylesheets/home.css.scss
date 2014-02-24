@@ -1,3 +1,85 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.offer-list {
+  overflow: hidden;
+  list-style: none;
+}
+
+#offers {
+  margin-top: -50px;
+}
+
+.offer {
+  float: left;
+  margin: 40px;
+  height: 400px;
+  width: 400px;
+}
+
+.offer-image {
+  height: 250px;
+}
+
+.offer-desc {
+  text-align: center;
+}
+
+.task-list {
+  overflow: hidden;
+  list-style: none;
+}
+
+.task {
+  margin: 5px;
+  float: left;
+  background: image-url('img_how-token-sprite.png');
+  height: 100px;
+  width: 100px;
+}
+
+/*task types*/
+
+.poll {
+  background-position:0px 0px;
+}
+.getting_to_know_you {
+  background-position:0px -101px;
+}
+.poll_multi {
+  background-position:0px -202px;
+}
+.how_to {
+  background-position:0px -303px;
+}
+.fact {
+  background-position:0px -404px;
+}
+.social{
+  background-position:0px -505px;
+}
+.do_gooder {
+  background-position:0px -606px;
+}
+.video {
+  background-position:0px -707px;
+}
+.twitter {
+  background-position:0px -808px;
+}
+.quiz {
+  background-position:0px -909px;
+}
+.testify {
+  background-position:0px -1010px;
+}
+.friends {
+  background-position:0px -1111px;
+}
+.approval {
+  background-position:0px -1212px;
+}
+.recipe {
+  background-position:0px -1313px;
+}
+

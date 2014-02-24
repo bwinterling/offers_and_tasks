@@ -7,5 +7,10 @@ FactoryGirl.define do
     terms "MyText"
     image_url "MyString"
     expiration "2014-02-28 11:08:57"
+    factory :offer_with_task do
+      after_create do |offer|
+        create(:task, offer: offer)
+      end
+    end
   end
 end
