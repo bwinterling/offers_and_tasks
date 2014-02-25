@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'haml-rails'
 gem 'pg'
+gem "active_model_serializers"
 
 group :production do
   gem 'rails_12factor'
