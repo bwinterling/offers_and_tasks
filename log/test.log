@@ -2035,3 +2035,164 @@ Completed 200 OK in 10.0ms (Views: 0.2ms | ActiveRecord: 0.7ms)
   [1m[36m (0.9ms)[0m  [1mDELETE FROM "tasks";[0m
   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tasks';[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 37.6ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.7ms)[0m  [1mDELETE FROM "offers";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'offers';[0m
+  [1m[35m (1.1ms)[0m  DELETE FROM "tasks";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tasks';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/offers" for 127.0.0.1 at 2014-02-24 19:08:59 -0700
+Processing by Api::V1::OffersController#index as HTML
+  [1m[35mOffer Load (0.1ms)[0m  SELECT "offers".* FROM "offers" 
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 2
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 3[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 4
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 5[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 6
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 7[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 8
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 9[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 10
+Completed 200 OK in 53.2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "offers";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'offers';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tasks';[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/api/v1/offers" for 127.0.0.1 at 2014-02-24 19:08:59 -0700
+Processing by Api::V1::OffersController#index as HTML
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT "offers".* FROM "offers" [0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 2[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 3
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 4[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 5
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 6[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 7
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 8[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 9
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."offer_id" = 10[0m
+Completed 200 OK in 11.3ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+  [1m[35mOffer Load (0.1ms)[0m  SELECT "offers".* FROM "offers" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "offers";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'offers';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tasks';[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "offers" ("created_at", "description", "expiration", "image_url", "name", "terms", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00], ["description", "MyText"], ["expiration", Fri, 28 Feb 2014 11:08:57 UTC +00:00], ["image_url", "MyString"], ["name", "MyString"], ["terms", "MyText"], ["updated_at", Tue, 25 Feb 2014 02:08:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2014-02-24 19:08:59 -0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.haml (3.4ms)
+  Rendered layouts/_messages.html.haml (1.4ms)
+Completed 200 OK in 42.3ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "offers";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'offers';
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tasks";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tasks';[0m

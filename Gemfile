@@ -11,9 +11,9 @@ end
 gem 'jquery-rails'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'haml-rails'
+gem 'pg'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
@@ -37,9 +37,9 @@ group :development, :test do
   gem 'awesome_print'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'sqlite3'
 end
 group :test do
+  gem 'sqlite3'
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
