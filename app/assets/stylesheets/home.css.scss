@@ -17,7 +17,7 @@
 
 .offer {
   float: left;
-  height: 465px;
+  height: 490px;
   margin: 40px 0;
 }
 
@@ -25,10 +25,16 @@
   height: 250px;
 }
 
+.offer-name {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .offer-desc {
   text-align: center;
-  font-size: 18px;
-  padding: 20px 20px 0;
+  font-size: 1.1em;
+  padding: 0 10px 0;
 }
 
 .task-list {
@@ -48,6 +54,10 @@
   background: image-url('img_how-token-sprite.png');
   height: 100px;
   width: 100px;
+}
+
+.amount {
+  padding-left: 57px;
 }
 
 /*task types*/
