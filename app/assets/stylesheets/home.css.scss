@@ -56,13 +56,24 @@
 .task {
   display: inline-block;
   margin: 5px;
-  background: image-url('img_how-token-sprite.png');
+  background: image-url('img_how-token-sprite2.png');
   height: 100px;
   width: 100px;
+  &:hover {
+    background-position:0px -1414px;
+    .amount {
+      opacity: 1;
+    }
+  };
 }
 
 .amount {
-  padding-left: 57px;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 40px;
 }
 
 /*task types*/
